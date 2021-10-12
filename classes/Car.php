@@ -7,7 +7,7 @@ class Car {
   public $model;
   public $price;
   public $engine_size;
-  public $image;
+  public $image_id;
 
   public function __construct() {
     $this->id = null;
@@ -57,7 +57,7 @@ class Car {
           $car->model = $row['model'];
           $car->price = $row['price'];
           $car->engine_size = $row['engine_size'];
-          // $car->image = $row['image'];
+          $car->image_id = $row['image_id'];
 
           // $festival now has all it's attributes assigned, so put it into the array $festivals[] 
           $cars[] = $car;
